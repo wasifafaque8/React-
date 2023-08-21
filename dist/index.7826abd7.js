@@ -2949,50 +2949,101 @@ var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
 //REACT ELEMENTS
 // React.createElement= object= HTML(DOM);
-const heading = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-    id: "title",
-    children: "Namastey Wasif"
-}, "h2", false, {
-    fileName: "App.js",
-    lineNumber: 6,
-    columnNumber: 17
-}, undefined);
+const Heading = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+        href: "/",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+            className: "logo",
+            alt: "logo",
+            src: "https://static.vecteezy.com/system/resources/previews/008/799/559/original/vintage-retro-restaurant-classic-food-with-fork-spoon-and-dish-design-concept-emblem-logo-template-free-vector.jpg"
+        }, void 0, false, {
+            fileName: "App.js",
+            lineNumber: 7,
+            columnNumber: 3
+        }, undefined)
+    }, void 0, false, {
+        fileName: "App.js",
+        lineNumber: 6,
+        columnNumber: 23
+    }, undefined);
+_c = Heading;
 //COMPONENTS
 //Functional Component
 const HeadingComponent = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "header",
         children: [
-            heading,
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                children: "Kaisa hai bhai "
-            }, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Heading, {}, void 0, false, {
                 fileName: "App.js",
                 lineNumber: 15,
-                columnNumber: 7
+                columnNumber: 5
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: "Theek hu....apna suna"
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "nav-items",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "Home "
+                        }, void 0, false, {
+                            fileName: "App.js",
+                            lineNumber: 18,
+                            columnNumber: 9
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "About US"
+                        }, void 0, false, {
+                            fileName: "App.js",
+                            lineNumber: 19,
+                            columnNumber: 9
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "Contact"
+                        }, void 0, false, {
+                            fileName: "App.js",
+                            lineNumber: 20,
+                            columnNumber: 9
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "Cart"
+                        }, void 0, false, {
+                            fileName: "App.js",
+                            lineNumber: 21,
+                            columnNumber: 9
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "App.js",
+                    lineNumber: 17,
+                    columnNumber: 7
+                }, undefined)
             }, void 0, false, {
                 fileName: "App.js",
                 lineNumber: 16,
-                columnNumber: 7
+                columnNumber: 5
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.js",
-        lineNumber: 13,
+        lineNumber: 14,
         columnNumber: 10
     }, undefined);
 };
-_c = HeadingComponent;
+_c1 = HeadingComponent;
+const appLayout = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Heading, {}, void 0, false, {
+        fileName: "App.js",
+        lineNumber: 27,
+        columnNumber: 10
+    }, undefined);
+};
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeadingComponent, {}, void 0, false, {
     fileName: "App.js",
-    lineNumber: 20,
+    lineNumber: 30,
     columnNumber: 13
 }, undefined));
-var _c;
-$RefreshReg$(_c, "HeadingComponent");
+var _c, _c1;
+$RefreshReg$(_c, "Heading");
+$RefreshReg$(_c1, "HeadingComponent");
 
   $parcel$ReactRefreshHelpers$c1db.postlude(module);
 } finally {
