@@ -1,6 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
+/**
+ * 
+ *  
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
+
+
 //REACT ELEMENTS
 // React.createElement= object= HTML(DOM);
 const Heading = () => (
@@ -36,14 +50,61 @@ const HeadingComponent = () => {
 };
 
 
-const appLayout=() =>{
-  return(
-    <Heading/>
-  )
+
+const biggiesBurger={
+  name:"Burger King",
+  image:"https://img.freepik.com/premium-vector/burger-logo-vector-art-design_260747-237.jpg?w=2000",
+  cuisines:["Burger", "American"],
+  rating:"4.2"
 }
+
+
+
+
+const RestrauntCard=() =>{
+  return(
+    <div className="card">
+      <img src={biggiesBurger.image}></img>
+      <h2>{biggiesBurger.name}</h2>
+      <h3>{biggiesBurger.cuisines.join(",")}</h3>
+      <h4>{biggiesBurger.rating}</h4>
+    </div>
+  );
+};
+
+
+
+
+const Body= () =>{
+  return(
+    <div>
+      <RestrauntCard/>
+    </div>
+  );
+};
+
+
+const Footer=() =>{
+  return(
+    <h2>Footer</h2>
+
+  )
+ 
+}
+
+
+const AppLayout=() =>{
+  return(
+    <>
+    <HeadingComponent/>
+    <Body/>
+    <Footer/>
+    </>
+  );
+};
 
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(<HeadingComponent/>);
+root.render(<AppLayout/>);

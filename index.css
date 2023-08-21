@@ -18,3 +18,17 @@
 .logo{
     width:100px;
 }
+
+.card{
+    border:1px solid black;
+    width:200px;
+    padding: 15px;
+    margin:10px;
+    height:200px;
+   
+}
+
+.card > img {
+    width: 208px;
+    height: 82px;
+}
